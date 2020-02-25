@@ -14,7 +14,7 @@ RUN echo "tzdata tzdata/Areas select Asia" > /tmp/preseed.txt; \
     apt install -y tzdata
 
 # Installing dependencies
-RUN apt install -y htop nano curl libaio1\
+RUN apt install -y htop nano curl libaio1 \
     libmecab2 libnuma1 perl psmisc net-tools uuid-runtime \
     gcc libpcre3-dev software-properties-common
     
