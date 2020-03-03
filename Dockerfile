@@ -55,6 +55,9 @@ RUN pecl install xdebug && \
     cp /tmp/phpmod/xdebug.ini /etc/php/7.4/mods-available/ && \
     phpenmod xdebug
 
+# Installing composer
+RUN apt install -y composer
+
 # Configuring project
 RUN cp /tmp/apache2.conf /etc/apache2/sites-available/000-default.conf && \
     cp /tmp/startup.sh /root/startup.sh
